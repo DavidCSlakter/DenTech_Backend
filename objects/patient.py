@@ -1,19 +1,21 @@
 
 class Patient:
 
-    def __init__(self, userID, name, address, phoneNo):
-        self.userID = userID
+    def __init__(self, patientID, name, address, phone_no):
+        self.patientID = patientID
         self.name = name
         self.address = address
-        self.phoneNo = phoneNo
-        self.checkedIn = False
+        self.phone_no = phone_no
+        self.checked_in = False
 
     def check_in():
         """ Allows patient to check in """
-        self.checkedIn = True
+        self.checked_in = True
 
     def change_address(new_address):
+        """ Updates address for patient """
         self.address = new_address
 
     def change_phone_no(new_phone_no):
-        self.phoneNo
+        """ Updates phone number for patient """
+        self.phone_no = new_phone_no
